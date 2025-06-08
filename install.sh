@@ -13,6 +13,7 @@ if ! command -v gh &> /dev/null; then
 fi
 
 echo "🔐 Logging into GitHub CLI (for git commits/pushes)..."
+unset GITHUB_TOKEN
 gh auth login
 
 # ──────────── Git Identity Setup ────────────
