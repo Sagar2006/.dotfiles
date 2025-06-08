@@ -1,5 +1,5 @@
 #!/bin/bash
-git clone https://github.com/Sagar2006/.dotfiles
+# git clone https://github.com/Sagar2006/.dotfiles
 echo "🛠️ Enabling 32-bit architecture support..."
 sudo dpkg --add-architecture i386
 sudo apt-get update
@@ -31,12 +31,12 @@ git config --global user.email "sagarkumar2006@outlook.com"
 
 echo "✅ Git identity set. You’re ready to push code!"
 
-# Safely remove .dotfiles folder
-SCRIPT_DIR="$(dirname "$0")"
+# # Safely remove .dotfiles folder
+# SCRIPT_DIR="$(dirname "$0")"
 
-if [[ "$SCRIPT_DIR" == *".dotfiles" ]]; then
-    echo "🧹 Removing .dotfiles directory at $SCRIPT_DIR"
-    rm -rf "$SCRIPT_DIR"
-else
-    echo "⚠️ Not removing directory. Unexpected script path: $SCRIPT_DIR"
-fi
+# if [[ "$SCRIPT_DIR" == *".dotfiles" ]]; then
+#     echo "🧹 Removing .dotfiles directory at $SCRIPT_DIR"
+#     rm -rf "$SCRIPT_DIR"
+# else
+#     echo "⚠️ Not removing directory. Unexpected script path: $SCRIPT_DIR"
+# fi
